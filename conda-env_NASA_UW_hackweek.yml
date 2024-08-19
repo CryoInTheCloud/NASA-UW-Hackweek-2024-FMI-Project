@@ -1,0 +1,29 @@
+# To create the environment:
+# #########################
+# conda env create -f conda-env_NASA_UW_hackweek.yml
+#    To update if yml-file has changed:
+#    conda env update --file conda-env_NASA_UW_hackweek.yml --prune
+# To use the environment:
+# ######################
+# conda activate conda-env_NASA_UW_hackweek
+name: conda-env_NASA_UW_hackweek
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python>=3.9
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - scipy
+  - tartes
+  - h5netcdf
+  - cartopy
+  - opencv
+  - requests
+  - spectral
+  - pip
+  - pip:
+      - datetime
+      - dateutil
