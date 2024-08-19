@@ -180,13 +180,17 @@ Figure 1.9: Study site location in Grand Mesa & Senator Beck Basin, Colorado.
 
 # Software
 
+
 ## Miniconda
 
 https://docs.anaconda.com/miniconda/#miniconda-latest-installer-links
 
 
-
 ![image](https://github.com/user-attachments/assets/142469fa-26d1-4ccd-9556-eb7e643e20e1)
+
+## Anaconda
+
+https://www.anaconda.com/installation-success?source=installer
 
 
 ## Virtual Enviroment
@@ -194,7 +198,7 @@ https://docs.anaconda.com/miniconda/#miniconda-latest-installer-links
 
 Use the following command in the NASA-Hackweek-FMI-Project folder to create a virtual environment in command prompt:
 
-conda env create -f conda-env_NASA_UW_hackweek
+conda env create -f conda-env_NASA_UW_hackweek.yml
 
 
 ## GitHub desktop
@@ -231,6 +235,11 @@ Choose the Long Term Version
 Spectral Documentation:
 
 https://www.spectralpython.net/
+
+
+## Python TARTES module
+
+https://pypi.org/project/tartes/
 
 
 
