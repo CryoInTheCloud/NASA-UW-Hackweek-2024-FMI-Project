@@ -160,20 +160,17 @@ standard deviation of albedo measured along the albedo line is plotted as open c
 Figure 1.9: Study site location in Grand Mesa & Senator Beck Basin, Colorado. 
 
 
+Senator Beck Basin, Colorado is chosen as the study site. 
+
 # Project Tasks
 
-
-1. Import AVIRIS-NG data (img. format) and the SSA data (probably a point/vector file) into QGIS. See QGIS manual: https://docs.qgis.org/3.34/en/docs/user_manual/index.html
-	- Identify which pixels specifically overlap with the ground SSA measurements.
-2. Model reflectance spectra with known SSA values with Snow TARTES. TARTES may as well be utilized as well.
-3. Plot AVIRIS-NG Surface Spectral Reflectance data. See tutorial: https://snowex-2024.hackweek.io/tutorials/albedo/aviris-ng-data.html
-4. Compare the modeled spectra to the corresponding AVIRIS-NG pixel spectra. Repeat as many times as possible within available time.
+1. Plot field spectrometer data. Choose one instrument. - Anton
+2. Model spectral reflectance with Snow TARTES using field station measurements as inputs (https://snowstudies.org/archival-data/). - Minttu
+3. Plot AVIRIS-NG data. Use tutorial: https://snowex-2024.hackweek.io/tutorials/albedo/aviris-ng-data.html. - Minttu
+4. Model spectral reflectance with ISSIA. - Anton
+5. Apply Manninen's reduction to TARTES in order to correct the modelled results for surface roughness. Consider using UAVSAR high-precision elevation data to validate the results. Compare the modeled spectra to the corresponding AVIRIS-NG pixel spectra. Repeat as many times as possible within available time. - Minttu
    
    	Hypothesis: Manninen et al. (2009) found that small-scale surface roughness can decrease the total albedo by up to about 0.1. Therefore it can be assumed that the AVRIS reflectance values results should 	be consistently lower in contrast to the TARTES bulk-modelled albedo. 
-
-5. Apply Manninen's reduction to TARTES in order to correct the modelled results for surface roughness. Consider using UAVSAR high-precision elevation data to validate the results. 
-6. Compare observed and modelled albedo and surface roughness results of SnowEX data analysis with Manninen et al. (2009). 
-
 
 
 
