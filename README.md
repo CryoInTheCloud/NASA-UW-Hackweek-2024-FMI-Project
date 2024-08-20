@@ -160,7 +160,7 @@ standard deviation of albedo measured along the albedo line is plotted as open c
 Figure 1.9: Study site location in Grand Mesa & Senator Beck Basin, Colorado. 
 
 
-Senator Beck Basin, Colorado is chosen as the study site. 
+Senator Beck Basin, Colorado is chosen as the study site. The date of spectrometer measurements is 29 April 2021.
 
 # Project Tasks
 
