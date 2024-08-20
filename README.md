@@ -160,8 +160,11 @@ standard deviation of albedo measured along the albedo line is plotted as open c
 Figure 1.9: Study site location in Grand Mesa & Senator Beck Basin, Colorado. The date of spectrometer measurements is 29 April 2021.
 
 
+Senator Beck Basin, Colorado is chosen as the study site. The date of spectrometer measurements is 29 April 2021.
+
 # Project Tasks
 
+<<<<<<< HEAD
 
 1. Plot field spectrometer data. Choose one instrument. - Anton
 
@@ -176,6 +179,16 @@ Figure 1.9: Study site location in Grand Mesa & Senator Beck Basin, Colorado. Th
     Hypothesis: Manninen et al. (2009) found that small-scale surface roughness can decrease the total albedo by up to about 0.1. Therefore it can be assumed that the AVRIS reflectance values results should be consistently lower in contrast to the TARTES bulk-modelled albedo.
 
 
+=======
+1. Plot field spectrometer data. Choose one instrument. - Anton
+2. Model spectral reflectance with Snow TARTES using field station measurements as inputs (https://snowstudies.org/archival-data/). - Minttu
+3. Plot AVIRIS-NG data. Use tutorial: https://snowex-2024.hackweek.io/tutorials/albedo/aviris-ng-data.html. - Minttu
+4. Model albedo with ISSIA. - Anton
+5. Apply Manninen's reduction to TARTES in order to correct the modelled results for surface roughness. Consider using UAVSAR high-precision elevation data to validate the results. Compare the modeled spectra to the corresponding AVIRIS-NG pixel spectra. Repeat as many times as possible within available time. - Minttu
+   
+   	Hypothesis: Manninen et al. (2009) found that small-scale surface roughness can decrease the total albedo by up to about 0.1. Therefore it can be assumed that the AVRIS reflectance values results should 	be consistently lower in contrast to the TARTES bulk-modelled albedo. 
+
+>>>>>>> 7f376abcdf0425ea7b6ce930ed14bd850c5a0856
 
 
 
