@@ -5,7 +5,7 @@
 #    conda env update --file conda-env_NASA_UW_hackweek.yml --prune
 # To use the environment:
 # ######################
-# conda activate conda-env_NASA_UW_hackweek
+# conda activate conda-env_NASA_UW_hackweek.yml
 name: conda-env_NASA_UW_hackweek
 channels:
   - defaults
