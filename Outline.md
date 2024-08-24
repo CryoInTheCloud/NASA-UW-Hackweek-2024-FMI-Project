@@ -5,6 +5,7 @@ Journals:
 1. Geoscience and Remote Sensing Society GRSS (https://www.grss-ieee.org/)
 2. Remote Sensing Letters (https://www.tandfonline.com/journals/trsl20/about-this-journal#aims-and-scope)
 
+Background research
 - Study recent articles in the journal
 - Read similar or related topic
 
