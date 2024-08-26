@@ -2,9 +2,7 @@
 
 ## The Purpose of the project
 
-The purpose of the project is to validate SnowEX data from March 19 2021. This is achieved by comparing AVIRIS-NG surface spectral reflectance and field spectrometer measurements to simulated albedo results. Surface reflectance is modeled with with the Two-streAm Radiative TransfEr in Snow TARTES and Imaging Spectroscopy Snow and Ice Algorithm. Robledano et al. (2023) provide a new breakthrough for a new approximation for the optical shape of snow, used in TARTES. It is based on simulating light propagation in three-dimensional images of natural snow at the micrometer scale. The results are compared with more simplified pherical and fractal grain shape approximations. Beyond this, the aim is to simulate the effects of surface roughness on snow albedo with a TARTES reduction (Manninen et al., 2009).
-
-
+The purpose of the project is to validate SnowEX data from March 19 2021. This is achieved by comparing AVIRIS-NG surface spectral reflectance and field spectrometer measurements to simulated results. Multi channel data are commonly used for albedo retrievals, and therefore using hyperspectral AVIRIS-NG data adds novelty to the research. Surface reflectance is modeled with with the Two-streAm Radiative TransfEr in Snow TARTES. A new breakthrough for an approximation for the optical shape of snow is used when modelling with TARTES (Robledano et al., 2023). It is based on simulating light propagation in three-dimensional images of natural snow at the micrometer scale. The results are compared with more simplified pherical and fractal grain shape approximations. Beyond this, the aim is to simulate the effects of surface roughness on snow albedo with a TARTES reduction (Manninen et al., 2009). In addition, Imaging Spectroscopy Snow and Ice Algorithm ISSIA is used for modelling broadband albedo. 
 
 
 ## What is albedo, and why does it matter?
@@ -72,6 +70,14 @@ Access TARTES documentation here:
 https://snow.univ-grenoble-alpes.fr/tartes/docs/tartes.html 
 
 
+
+## Creating a lookup table to account for missing SSA values
+
+Run TARTES with SSA values ranging between 0 - 60 m2/kg by increments of 1 m2/kg.
+
+Use scaled band area approach, or the NDGSI (Eqs. 1 and 3, respectively, from the following paper: https://doi.org/10.3389/frsen.2022.1038287). Let's say you use the NDGSI, for example. Calculate that value for each of your 60 modeled TARTES spectra. So now you've got a list of 60 NDGSI values that correspond to your 60 different SSAs. This is the lookup table.
+
+calculate the NDGSI from your measured field spectrometer data. Match that to the closest NDGSI value in the lookup table and "retrieve" the corresponding SSA.
 
 
 
