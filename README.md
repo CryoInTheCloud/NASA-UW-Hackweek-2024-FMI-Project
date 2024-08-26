@@ -2,7 +2,7 @@
 
 ## The Purpose of the project
 
-The purpose of the project is to compare AVIRIS-NG Surface Spectral Reflectance measurements to simulated albedo results modeled with the Two-streAm Radiative TransfEr in Snow TARTES. Beyond this, the aim is to simulate the effects of surface roughness on snow albedo with a TARTES extension model. I propose continuing with writing an article on the data analysis results after the NASA UW Hackweek event. We have a great collaborative network at the Finnish Meteorological Institute FMI. This ensures our team gets proper advice from the experts in the field of remote sensing and in situ spectrometric measurements of snow as well as TARTES modeling advice. 
+The purpose of the project is to validate SnowEX data from March 19 2021. This is achieved by comparing AVIRIS-NG surface spectral reflectance and field spectrometer measurements to simulated albedo results. Surface reflectance is modeled with with the Two-streAm Radiative TransfEr in Snow TARTES and Imaging Spectroscopy Snow and Ice Algorithm. Beyond this, the aim is to simulate the effects of surface roughness on snow albedo with a TARTES extension model.
 
 
 ## What is albedo, and why does it matter?
@@ -140,16 +140,29 @@ the effect of the roughness may be more pronounced. As snow is melting, impuriti
 
 ![Perovich et al, 2002](https://github.com/user-attachments/assets/32289492-091a-4095-a282-f21f50075983)
 
-Figure 1.8: There are five stages in albedo evolution for the Arctic, which include dry snow, melting
-snow, pond formation, pond evolution, fall freezeup. The graph shows a time series of wavelength 
-integrated albedo from 1 April 1998 through 27 September 1998, averaged over a 200 m line. The
-standard deviation of albedo measured along the albedo line is plotted as open circles. Source:
-(Perovich et al. , 2002)
+Figure 1.8: There are five stages in albedo evolution for the Arctic, which include dry snow, melting snow, pond formation, pond evolution, fall freezeup. The graph shows a time series of wavelength integrated albedo from 1 April 1998 through 27 September 1998, averaged over a 200 m line. The standard deviation of albedo measured along the albedo line is plotted as open circles. Source: (Perovich et al. , 2002)
+
+# ISSIA
+
+ISSIA Imaging Spectrometer - Snow and Ice Algorithm produces retrievals of broadband albedo, optical grain radius, and radiative forcing by light absorbing particles (LAPs) (Donahue et al., 2013). 
 
 
+INPUTS:
+
+The ATCOR-4 .inn file (this pulls the solar zenith angle for each flight line)
+The atmospherically corrected reflectance file (atm.dat)
+The modeled global solar flux at the ground (eglo.dat)
+The terrain slope map from ATCOR-4 (slp.dat)
+The terrain aspect map from ATCOR-4 (asp.dat)
+
+OUTPUT:
+
+A separate geotiff is saved for each retreival in the same directory as the in put files. Pixels with retreival value are stored with a nan. NOTE: The Coordinate reference system code is a required input and is currently set to WGS 84 / UTM Zone 10N for Place Glacier. If processing data elsewhere update coordRefSysCode.
 
 
+MATLAB script on GitHub:
 
+https://github.com/donahuechristopher/ISSIA
 
 
 # Study site: Grand Mesa & Senator Beck Basin, Colorado
@@ -162,23 +175,26 @@ Figure 1.9: Study site location in Grand Mesa & Senator Beck Basin, Colorado. Th
 
 Senator Beck Basin, Colorado is chosen as the study site. The date of spectrometer measurements is 29 April 2021.
 
+
 # Project Tasks
 
 
 
-1. Plot field spectrometer data. Choose one instrument. - Anton
+1. Plot field spectrometer data. Choose one instrument. 
 
-2. Model spectral reflectance with Snow TARTES using field station measurements as inputs (https://snowstudies.org/archival-data/). - Kavita
+2. Model spectral reflectance with Snow TARTES using field station measurements as inputs (https://snowstudies.org/archival-data/). 
 
-3. Plot AVIRIS-NG data. Use tutorial: https://snowex-2024.hackweek.io/tutorials/albedo/aviris-ng-data.html. - Minttu
+3. Plot AVIRIS-NG data. Use tutorial: https://snowex-2024.hackweek.io/tutorials/albedo/aviris-ng-data.html. 
 
-4. Model spectral reflectance with ISSIA. - Anton
+4. Model spectral reflectance with ISSIA. 
 
-5. Make a lookup table for SSA values - Minttu
+5. Make a lookup table for SSA values. 
 
-6. Model spectral reflectance with TARTES - python version - Minttu
+6. Model spectral reflectance with TARTES with python.
 
-7. Apply Manninen's reduction to TARTES in order to correct the modelled results for surface roughness. Consider using UAVSAR high-precision elevation data to validate the results. Compare the modeled spectra to the corresponding AVIRIS-NG pixel spectra. Repeat as many times as possible within available time. - Minttu
+7. Model broadband albedo, optical grain radius, and radiative forcing by light absorbing particles (LAPs).
+
+8. Apply Manninen's reduction to TARTES in order to correct the modelled results for surface roughness. Consider using UAVSAR high-precision elevation data to validate the results. Compare the modeled spectra to the corresponding AVIRIS-NG pixel spectra. Repeat as many times as possible within available time. 
 
     Hypothesis: Manninen et al. (2009) found that small-scale surface roughness can decrease the total albedo by up to about 0.1. Therefore it can be assumed that the AVRIS reflectance values results should be consistently lower in contrast to the TARTES bulk-modelled albedo.
 
