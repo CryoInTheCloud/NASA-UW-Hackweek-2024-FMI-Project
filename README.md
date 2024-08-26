@@ -2,7 +2,9 @@
 
 ## The Purpose of the project
 
-The purpose of the project is to validate SnowEX data from March 19 2021. This is achieved by comparing AVIRIS-NG surface spectral reflectance and field spectrometer measurements to simulated albedo results. Surface reflectance is modeled with with the Two-streAm Radiative TransfEr in Snow TARTES and Imaging Spectroscopy Snow and Ice Algorithm. Beyond this, the aim is to simulate the effects of surface roughness on snow albedo with a TARTES reduction (Manninen et al., 2009).
+The purpose of the project is to validate SnowEX data from March 19 2021. This is achieved by comparing AVIRIS-NG surface spectral reflectance and field spectrometer measurements to simulated albedo results. Surface reflectance is modeled with with the Two-streAm Radiative TransfEr in Snow TARTES and Imaging Spectroscopy Snow and Ice Algorithm. Robledano et al. (2023) provide a new breakthrough for a new approximation for the optical shape of snow, used in TARTES. It is based on simulating light propagation in three-dimensional images of natural snow at the micrometer scale. The results are compared with more simplified pherical and fractal grain shape approximations. Beyond this, the aim is to simulate the effects of surface roughness on snow albedo with a TARTES reduction (Manninen et al., 2009).
+
+
 
 
 ## What is albedo, and why does it matter?
@@ -39,6 +41,10 @@ Figure 1.2: Spectral surface reflectance of snow, vegetation, dry soil and water
 
 
 The Two-streAm Radiative TransfEr in Snow TARTES is a fast and user friendly optical radiative transfer model used to compute bulk spectral albedo of a given snowpack (Libois et al., 2013). TARTES is accurate in the visible and near-infrared range for pristine snow. Impurities can be represented as Raileigh scatters, where their size is assumed much smaller than the wavelength. The model is based on formalism for weakly absorbing media to describe the sinle scatterinf properties of each layer and the delta-Eddington approximation to solve the radiative transfer equation (Kokhanovsky and Zege, 2004). TARTES has been written with Python. It is open source software with GPL License, and can be accessed here: https://github.com/ghislainp/tartes. 
+
+Robledano et al. (2023) provide a new breakthrough for a new approximation for the optical shape of snow. It is based on simulating light propagation in three-dimensional images of natural snow at the micrometer scale. The results are compared with more simplified pherical and fractal grain shape approximations. 
+
+
 
 
 ## Snow TARTES
