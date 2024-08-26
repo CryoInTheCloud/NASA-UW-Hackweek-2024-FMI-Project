@@ -2,7 +2,7 @@
 
 ## The Purpose of the project
 
-The purpose of the project is to validate SnowEX data from March 19 2021. This is achieved by comparing AVIRIS-NG surface spectral reflectance and field spectrometer measurements to simulated albedo results. Surface reflectance is modeled with with the Two-streAm Radiative TransfEr in Snow TARTES and Imaging Spectroscopy Snow and Ice Algorithm. Beyond this, the aim is to simulate the effects of surface roughness on snow albedo with a TARTES extension model.
+The purpose of the project is to validate SnowEX data from March 19 2021. This is achieved by comparing AVIRIS-NG surface spectral reflectance and field spectrometer measurements to simulated albedo results. Surface reflectance is modeled with with the Two-streAm Radiative TransfEr in Snow TARTES and Imaging Spectroscopy Snow and Ice Algorithm. Beyond this, the aim is to simulate the effects of surface roughness on snow albedo with a TARTES reduction (Manninen et al., 2009).
 
 
 ## What is albedo, and why does it matter?
