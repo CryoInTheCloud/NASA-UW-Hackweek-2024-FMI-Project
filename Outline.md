@@ -9,7 +9,9 @@ Background research
 - Study recent articles in the journal
 - Read similar or related topic
 
+Collaborators:
 
+Minttu Pekkala, Anton Avchyan, Kavita Mitkari, Micah Sandusky, Megan Mason, Joachim Myear, Steven Pestana, James Dillon
 
 
 Research questions
