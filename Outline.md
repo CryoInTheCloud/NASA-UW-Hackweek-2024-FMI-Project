@@ -63,30 +63,18 @@ Novelty:
 
 ### ISSIA
 
-
+- Running TARTES in MATLAB
 
 ### TARTES
 
-Creating a lookup table to account formissing SSA values
-
-1. Run TARTES with SSA values ranging between 0 - 60 m2/kg by increments of 1 m2/kg.
-
-
-2. Use scaled band area approach, or the NDGSI (Eqs. 1 and 3, respectively, from the following paper:
-https://doi.org/10.3389/frsen.2022.1038287). Let's say you use the NDGSI, for example. You'll
-calculate that value for each of your 60 modeled TARTES spectra. So now you've got a list of 60
-NDGSI values that correspond to your 60 different SSAs. This is your lookup table.
-
-
-3. calculate the NDGSI from your measured field spectrometer data. Match that to the closest NDGSI
-value in the lookup table and "retrieve" the corresponding SSA.
-
+- Running TARTES in Python
+- Creating a lookup table to account formissing SSA values
 
 
 
 # Results, Discussion, and Conclusions
 
-
+Answering the researh questions. 
 
 
 
