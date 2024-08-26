@@ -116,7 +116,9 @@ p = latter scattering sequences
 
 - The following scattering events are assumed to be independent of the solar zenith angle of the original incident radiation
 
+  
 
+The bidirectional reflectance factor BRF, is a ratio between outgoing radiance at one given direction and incoming radiance at another given direction. The impact of surface roughness on albedo increases as solar zenith angle increases. Source: (Zhang et al, 2021)
 
 
 ![image](https://github.com/user-attachments/assets/a2588dd5-fc54-45d7-9d7a-269737774a88)
@@ -125,16 +127,13 @@ Figure 1.6: Visualizing surface albedo. The red lines indicate the incident dire
 
 
 
-The bidirectional reflectance factor BRF, is a ratio between outgoing radiance at one given direction and incoming radiance at another given direction. The impact of surface roughness on albedo increases as solar zenith angle increases. Source: (Zhang et al, 2021)
-
 
 ![image](https://github.com/user-attachments/assets/b074c298-5be5-4045-b27d-70c36788c32f)
 
 Figure 1.7: Visualization of Sun Azimuth and Sun Zenith angles (Zhang et al. 2021). 
 
 
-The impact of surface roughness on albedo increases with the progress of the melting season. When snow is darker, 
-the effect of the roughness may be more pronounced. As snow is melting, impurities cause deep narrow pits to form in the snowpack. They sink in the snowpack as a result of absorption of solar radiation (Manninen et. al). 
+The impact of surface roughness on albedo increases with the progress of the melting season. When snow is darker, the effect of the roughness may be more pronounced. As snow is melting, impurities cause deep narrow pits to form in the snowpack. They sink in the snowpack as a result of absorption of solar radiation (Manninen et. al). 
 
 
 ![Perovich et al, 2002](https://github.com/user-attachments/assets/32289492-091a-4095-a282-f21f50075983)
@@ -180,8 +179,6 @@ exhibited changing snow conditions through time: 1) cold, clean snow (19 March),
 
 
 # Project Tasks
-
-
 
 1. Plot field spectrometer data. Choose one instrument. 
 
