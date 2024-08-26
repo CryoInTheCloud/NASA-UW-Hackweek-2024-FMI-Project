@@ -362,9 +362,13 @@ https://uavsar.jpl.nasa.gov/technology/ka-band.html
 
 # References:
 
+Donahue, C., Menounos, B., Viner, N., Skiles M., Beffort, S., Denouden, T., Gonzalez Arriola S., White, R., Heathfield, D., Bridging the gap between airborne and spaceborne imaging spectroscopy for mountain glacier surface property retrievals, Remote Sensing of Environment, Volume 299, 2023, 113849, ISSN 0034-4257, https://doi.org/10.1016/j.rse.2023.113849.
+
 Libois, Q., Picard, G., France, J. L., Arnaud, L., Dumont, M., Carmagnola, C. M., and King, M. D.: Influence of grain shape on light penetration in snow, The Cryosphere, 7, 1803–1818, https://doi.org/10.5194/tc-7-1803-2013, 2013.
 
 Manninen, T., Anttila, K., Jääskeläinen, E., Riihelä, A., Peltoniemi, J., Räisänen, P., Lahtinen, P., Siljamo, N., Thölix, L., Meinander, O., Kontu, A., Suokanerva, H., Pirazzini, R., Suomalainen, J., Hakala, T., Kaasalainen, S., Kaartinen, H., Kukko, A., Hautecoeur, O., and Roujean, J.-L.: Effect of small-scale snow surface roughness on snow albedo and reflectance, The Cryosphere, 15, 793–820, https://doi.org/10.5194/tc-15-793-2021, 2021.
+
+Robledano, A., Picard, G., Dumont, M. et al. Unraveling the optical shape of snow. Nat Commun 14, 3955 (2023). https://doi.org/10.1038/s41467-023-39671-3
 
 Stephens, G. L., O’Brien, D., Webster, P. J., Pilewski, P., Kato, S., and Li, J. 2015.
 The albedo of Earth. Reviews of Geophysics, 53(1), 141–163.
@@ -375,7 +379,7 @@ Perovich, D. K., Grenfell, T. C., Light, B., and Hobbs, P. V. 2002. Seasonal evo
 of the albedo of multiyear Arctic sea ice. Journal of Geophysical Research: Oceans,
 107(C10), SHE 20–1–SHE 20–13.
 
-Qu, Ying & Liang, Shunlin & Liu, Qiang & He, Tao & Liu, Suhong & Li, Xiaowen. (2015). Mapping Surface Broadband Albedo from Satellite Observations: A Review of Literatures on Algorithms and Products. Remote Sensing. 7. 990-1020. 10.3390/rs70100990. 
+Qu, Y., Liang, S., Liu, Q., He, T., Liu, S., Li, X. (2015). Mapping Surface Broadband Albedo from Satellite Observations: A Review of Literatures on Algorithms and Products. Remote Sensing. 7. 990-1020. 10.3390/rs70100990. 
 
 Wild, M., Folini, M., Schär C., Loeb N., Ellsworth G. D, and König-Langlo, G. 2013.
 The global energy balance from a surface perspective. Climate Dynamics, 40(11),
