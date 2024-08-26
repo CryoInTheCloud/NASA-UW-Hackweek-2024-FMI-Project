@@ -41,7 +41,6 @@ Figure 1.2: Spectral surface reflectance of snow, vegetation, dry soil and water
 The Two-streAm Radiative TransfEr in Snow TARTES is a fast and user friendly optical radiative transfer model used to compute bulk spectral albedo of a given snowpack (Libois et al., 2013). TARTES is accurate in the visible and near-infrared range for pristine snow. Impurities can be represented as Raileigh scatters, where their size is assumed much smaller than the wavelength. The model is based on formalism for weakly absorbing media to describe the sinle scatterinf properties of each layer and the delta-Eddington approximation to solve the radiative transfer equation (Kokhanovsky and Zege, 2004). TARTES has been written with Python. It is open source software with GPL License, and can be accessed here: https://github.com/ghislainp/tartes. 
 
 
-
 ## Snow TARTES
 
 ![image](https://github.com/user-attachments/assets/4024b44a-4def-48d2-8d10-aec0fdc7d800)
@@ -87,7 +86,7 @@ Figure 1.5: Snow reflectance spectral measured using the ASD spectrometer, and s
 for fractal grains (blue) and spheres (red) Source: (Qu et al., 2015)
 
 
-## Mathematics behind TARTES 
+## Mathematics behind TARTES extension 
 
 
 Scattering of light in canopies is described with photon recollision theory, p theory
@@ -142,6 +141,8 @@ the effect of the roughness may be more pronounced. As snow is melting, impuriti
 
 Figure 1.8: There are five stages in albedo evolution for the Arctic, which include dry snow, melting snow, pond formation, pond evolution, fall freezeup. The graph shows a time series of wavelength integrated albedo from 1 April 1998 through 27 September 1998, averaged over a 200 m line. The standard deviation of albedo measured along the albedo line is plotted as open circles. Source: (Perovich et al. , 2002)
 
+
+
 # ISSIA
 
 ISSIA Imaging Spectrometer - Snow and Ice Algorithm produces retrievals of broadband albedo, optical grain radius, and radiative forcing by light absorbing particles (LAPs) (Donahue et al., 2013). 
@@ -172,8 +173,10 @@ https://github.com/donahuechristopher/ISSIA
 
 Figure 1.9: Study site location in Grand Mesa & Senator Beck Basin, Colorado. The date of spectrometer measurements is 19 March 2021.
 
+The SnowEX21 AVIRIS-NG data set provides apparent surface spectral reflectance imagery which demonstrates snow albedo and snow optical property evolution across two distinct snow-covered environments in Colorado. Data collection occurred in the spring of 2021 as part of the NASA SnowEx mission. The two study sites (Senator Beck Basin and Grand Mesa) were chosen for their contrasting terrain and vegetation characteristics. Data collection occurred over three days (19 March, 1 April, and 29 April) to produce a time series data set across varying snow conditions. 
 
-Senator Beck Basin, Colorado is chosen as the study site. The date of spectrometer measurements is 29 April 2021.
+Senator Beck Basin is a high elevation alpine basin in the San Juan mountains in southwest Colorado. The basin features complex topography and minimal vegetation due to its location above tree line. Grand Mesa is a flat-topped mountain located in west central Colorado. The northwest portion of Grand Mesa selected for this work is relatively flat and well-forested. The three dates selected for data collection
+exhibited changing snow conditions through time: 1) cold, clean snow (19 March), 2) warming, clean snow (11 April), and 3) melting, dirty snow (29 April). The date chosen for the data analysis is 19 March 2021.
 
 
 # Project Tasks
@@ -300,10 +303,6 @@ https://search.earthdata.nasa.gov/search/granules/collection-details?p=C30469876
 
 ## SnowEx21 Senator Beck Basin and Grand Mesa, CO AVIRIS-NG Surface Spectral Reflectance
 
-This data set provides apparent surface spectral reflectance imagery which demonstrates snow albedo and snow optical property evolution across two distinct snow-covered environments in Colorado. Data collection occurred in the spring of 2021 as part of the NASA SnowEx mission. The two study sites (Senator Beck Basin and Grand Mesa) were chosen for their contrasting terrain and vegetation characteristics. Data collection occurred over three days (19 March, 1 April, and 29 April) to produce a time series data set across varying snow conditions. 
-
-Senator Beck Basin is a high elevation alpine basin in the San Juan mountains in southwest Colorado. The basin features complex topography and minimal vegetation due to its location above tree line. Grand Mesa is a flat-topped mountain located in west central Colorado. The northwest portion of Grand Mesa selected for this work is relatively flat and well-forested. The three dates selected for data collection
-exhibited changing snow conditions through time: 1) cold, clean snow (19 March), 2) warming, clean snow (11 April), and 3) melting, dirty snow (29 April). 
 
 ### AVIRIS-NG Surface Spectral Reflectance Tutorial
 
